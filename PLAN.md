@@ -2,9 +2,16 @@
 
 > A study tracker with enhancements: rustiness decay, spaced repetition reviews, certification tracking, monthly/annual planning — organized across Academy (CS) and Industry (Software Dev) domains.
 
-**Tech Stack**: Next.js 14+ (App Router) + TanStack Query | Rails 7 API-only | PostgreSQL | Devise + JWT
+**Tech Stack**: Next.js 16 (App Router) + TanStack Query | Rails 8 API-only | PostgreSQL | Devise + JWT | CSS Modules
 
 **Scope**: Single user (personal use), with auth for security.
+
+### Progress
+- [x] **Sprint 1: Foundation** — completed 2026-02-08
+- [ ] Sprint 2: Core Tracking
+- [ ] Sprint 3: Planning
+- [ ] Sprint 4: Certs & Resources
+- [ ] Sprint 5: Dashboard & Polish
 
 ---
 
@@ -250,7 +257,7 @@ Aggregated JSON response:
 ## Phase 4: Frontend (Next.js)
 
 ### UI Stack
-- **Tailwind CSS** + **shadcn/ui**
+- **CSS Modules** (no Tailwind)
 - **Recharts** for charts
 - **Lucide** icons
 - **TanStack Query** for server state
@@ -349,13 +356,13 @@ src/app/
 
 ## Phase 6: Implementation Order (MVP → Full)
 
-### Sprint 1: Foundation
-1. Scaffold Rails API + Next.js + Docker Compose
-2. Devise + JWT auth
-3. All database migrations
-4. Topic CRUD (model, controller, serializer)
-5. API client + auth flow in frontend
-6. Topics page with category tabs
+### Sprint 1: Foundation ~~DONE~~
+1. ~~Scaffold Rails API + Next.js~~ (no Docker — using local Postgres)
+2. ~~Devise + JWT auth~~
+3. ~~All database migrations (8 tables)~~
+4. ~~Topic CRUD (model, controller, serializer)~~
+5. ~~API client + auth flow in frontend~~
+6. ~~Topics page with category tabs~~
 
 ### Sprint 2: Core Tracking
 7. RustinessService + rusty topics endpoint
