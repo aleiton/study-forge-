@@ -1,0 +1,69 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  border-right: 1px solid var(--border);
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex-shrink: 0;
+}
+
+.logo {
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 0 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  color: var(--muted);
+  transition: background 0.15s, color 0.15s;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  background: var(--card-bg);
+  color: var(--foreground);
+}
+
+.navLinkActive {
+  composes: navLink;
+  background: var(--card-bg);
+  color: var(--foreground);
+  font-weight: 500;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.logoutBtn {
+  composes: navLink;
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 0.875rem;
+  font-family: inherit;
+}
+
+.logoutBtn:hover {
+  color: var(--danger);
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}

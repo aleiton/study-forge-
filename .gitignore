@@ -1,0 +1,35 @@
+# Dependencies
+frontend/node_modules/
+backend/vendor/bundle/
+
+# Environment
+frontend/.env.local
+frontend/.env*.local
+backend/.env
+
+# Build output
+frontend/.next/
+frontend/out/
+
+# Rails
+backend/log/*
+backend/tmp/*
+backend/storage/*
+backend/db/*.sqlite3
+backend/db/*.sqlite3-*
+!backend/log/.keep
+!backend/tmp/.keep
+
+# OS
+.DS_Store
+*.swp
+*.swo
+
+# IDE
+.idea/
+.vscode/
+*.code-workspace
+
+# Credentials (keep encrypted versions)
+backend/config/credentials/*.key
+backend/config/master.key
