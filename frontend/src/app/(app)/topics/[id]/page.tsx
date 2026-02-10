@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, Trash2 } from "lucide-react";
 import { useTopic, useDeleteTopic } from "@/hooks/useTopics";
+import RustinessGauge from "@/components/RustinessGauge";
 import styles from "./topicDetail.module.css";
 
 function freshnessClass(label: string) {
@@ -65,6 +66,14 @@ export default function TopicDetailPage({
             Delete
           </button>
         </div>
+      </div>
+
+      <div style={{ display: "flex", alignItems: "center", gap: "2rem", marginBottom: "1.5rem" }}>
+        <RustinessGauge
+          score={attrs.freshness_score}
+          label={attrs.last_practiced_at ? attrs.freshness_label.replace("_", " ") : "never practiced"}
+          size={140}
+        />
       </div>
 
       <div className={styles.statsGrid}>

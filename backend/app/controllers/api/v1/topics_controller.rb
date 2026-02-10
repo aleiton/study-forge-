@@ -39,8 +39,9 @@ class Api::V1::TopicsController < Api::V1::BaseController
   end
 
   def rusty
-    topics = Topic.where.not(last_practiced_at: nil).order(last_practiced_at: :asc)
-    render json: TopicSerializer.new(topics).serializable_hash
+    topics = RustinessService.rusty_topics(Topic.all)
+    summary = RustinessService.freshness_summary(Topic.all)
+    render json: TopicSerializer.new(topics).serializable_hash.merge(meta: { freshness_summary: summary })
   end
 
   def log_practice

@@ -8,7 +8,7 @@
 
 ### Progress
 - [x] **Sprint 1: Foundation** — completed 2026-02-08
-- [ ] Sprint 2: Core Tracking
+- [x] **Sprint 2: Core Tracking** — completed 2026-02-10
 - [ ] Sprint 3: Planning
 - [ ] Sprint 4: Certs & Resources
 - [ ] Sprint 5: Dashboard & Polish
@@ -364,11 +364,11 @@ src/app/
 5. ~~API client + auth flow in frontend~~
 6. ~~Topics page with category tabs~~
 
-### Sprint 2: Core Tracking
-7. RustinessService + rusty topics endpoint
-8. ReviewSchedulerService + review_sessions CRUD
-9. RustinessGauge + Reviews page
-10. Annual Goals CRUD + GoalProgressBar
+### Sprint 2: Core Tracking ~~DONE~~
+7. ~~RustinessService + rusty topics endpoint~~
+8. ~~ReviewSchedulerService + review_sessions CRUD~~
+9. ~~RustinessGauge + Reviews page~~
+10. ~~Annual Goals CRUD + GoalProgressBar~~
 
 ### Sprint 3: Planning
 11. Monthly Plans + Plan Items CRUD

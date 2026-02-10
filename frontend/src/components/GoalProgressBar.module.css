@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.track {
+  flex: 1;
+  background: var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.trackSm {
+  composes: track;
+  height: 6px;
+}
+
+.trackMd {
+  composes: track;
+  height: 10px;
+}
+
+.trackLg {
+  composes: track;
+  height: 16px;
+}
+
+.fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.percentage {
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--foreground);
+}
+
+.percentageSm {
+  composes: percentage;
+  font-size: 0.75rem;
+  min-width: 2.5rem;
+}
+
+.percentageMd {
+  composes: percentage;
+  font-size: 0.875rem;
+  min-width: 3rem;
+}
+
+.percentageLg {
+  composes: percentage;
+  font-size: 1rem;
+  min-width: 3.5rem;
+}
